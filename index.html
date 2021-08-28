@@ -11,6 +11,9 @@
   <link rel="icon" href="./assets/images/hotstar.ico" />
   <link rel="stylesheet" href="./assets/css/reset.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <title>Disney+ Hotstar</title>
 </head>
 
@@ -25,13 +28,13 @@
         </svg>
         <div class="dropdown-hover">
           <a href="/">
-            <div class="dropdown">Channels</div>
+            <div class="dropdown"><i class="fa fa-desktop"></i> Channels</div>
           </a>
           <a href="/">
-            <div class="dropdown">Languages</div>
+            <div class="dropdown"><i class="fa fa-language"></i>Languages</div>
           </a>
           <a href="/">
-            <div class="dropdown">Genres</div>
+            <div class="dropdown"><i class="fa fa-clone"></i>Genres</div>
           </a>
         </div>
       </div>
@@ -166,7 +169,7 @@
         <div class="subscribe-btn">
           <a href="">SUBSCRIBE</a>
         </div>
-        <div class="login-btn">LOGIN</div>
+        <div class="login-btn" id="loginbtn">LOGIN</div>
       </div>
     </div>
   </nav>
@@ -1013,6 +1016,28 @@
       </div>
     </div>
   </footer>
+  <section class="popup" id="pop-up">
+    <div class="svg-close" id="close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 14 14">
+        <g fill="none" fill-rule="evenodd">
+          <path fill="#B1B1B1" fill-rule="nonzero"
+            d="M14 1.41L12.59 0 7 5.59 1.41 0 0 1.41 5.59 7 0 12.59 1.41 14 7 8.41 12.59 14 14 12.59 8.41 7z" />
+          <path d="M-5-5h24v24H-5z" />
+        </g>
+      </svg>
+    </div>
+    <div class="login-body">
+      <div class="login">Login to continue</div>
+      <div class="face">Have a Facebook/Email account?</div>
+      <div class="or">or</div>
+      <div class="mobile">
+        <div class="number">+91</div>
+        <div class="input">
+          <input type="tel" placeholder="Enter your mobile number">
+        </div>
+      </div>
+    </div>
+  </section>
   <script src="./assets/js/index.js"></script>
 </body>
 
