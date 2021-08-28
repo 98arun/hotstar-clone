@@ -1,6 +1,8 @@
 # Disney+ Hotstar(clone)
 ## Demo link:-(https://98arun.github.io/hotstar-clone/)
 This Hotstar home page was created using  HTML, CSS, and some basic JavaScript.
+## Homepage Snapshot:-
+![Hotstar UI](https://user-images.githubusercontent.com/82587103/131221884-3354c1f8-73d0-4e64-afeb-abf626176bdb.png)
 
 ### Overview:- We have to create two pages.
 
