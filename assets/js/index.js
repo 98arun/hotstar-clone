@@ -1,11 +1,11 @@
 console.log("hey");
-let loginbtn = document.getElementById("loginbtn");
-let closebtn = document.getElementById("close");
+let loginBtn = document.getElementById("loginBtn");
+let closeBtn = document.getElementById("close");
 let popup = document.getElementById("pop-up");
 
-loginbtn.addEventListener("click", () => {
+loginBtn.addEventListener("click", () => {
   popup.style.display = "block";
 });
-closebtn.addEventListener("click", () => {
+closeBtn.addEventListener("click", () => {
   popup.style.display = "none";
 });

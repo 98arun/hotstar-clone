@@ -26,6 +26,7 @@ nav {
   position: relative;
   top: 10px;
   fill: #a0a3a8;
+  /* transition: all 0.5s ease-in-out; */
 }
 
 .disney-logo img {
@@ -42,6 +43,8 @@ nav {
   font-size: 18px;
   color: #a0a3a8;
   text-decoration: none;
+  cursor: pointer;
+  position: relative;
   padding: 20px 15px 20px;
 }
 .list-items:hover {
@@ -130,8 +133,7 @@ nav {
   position: absolute;
   top: 50px;
   padding: 10px 0;
-
-  /* transition: all 0.5s ease-in-out; */
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 .drop-pd {
   background-color: #192133;
@@ -139,7 +141,6 @@ nav {
   padding: 0;
   display: none;
   top: 60px;
-  color: #fff;
   border-radius: 4px;
 }
 .drop-left {
@@ -149,7 +150,6 @@ nav {
   position: absolute;
   padding: 0;
   top: 60px;
-  color: #fff;
   border-radius: 4px;
 }
 .drop-left2 {
@@ -159,7 +159,6 @@ nav {
   position: absolute;
   padding: 0;
   top: 60px;
-  color: #fff;
   border-radius: 4px;
 }
 .dropdown-hover a,
@@ -184,16 +183,17 @@ nav {
   background-color: #0c111b;
   color: #fff;
 }
-.hamburger svg:hover ~ .dropdown-hover {
+
+.hamburger:hover .dropdown-hover {
   display: block;
 }
-.hover1:hover ~ .drop-pd {
+.hover1:hover .drop-pd {
   display: block;
 }
-.hover2:hover ~ .drop-left {
+.hover2:hover .drop-left {
   display: block;
 }
-.hover3:hover ~ .drop-left2 {
+.hover3:hover .drop-left2 {
   display: block;
 }
 .outer {
@@ -219,6 +219,7 @@ nav {
   width: 1755px;
   display: flex;
   margin-right: 165px;
+  position: relative;
 }
 .text-container {
   padding: 60px 0 0 60px;
@@ -250,11 +251,20 @@ nav {
   z-index: 0;
   position: relative;
   right: -15px;
-  background: linear-gradient(to right, #030b17, rgba(0, 0, 0, 0));
 }
 .image img {
   width: 100%;
   height: 566px;
+}
+.gradient {
+  top: 0;
+  right: 785px;
+  z-index: 1;
+  width: 200px;
+  height: 100%;
+  content: "";
+  position: absolute;
+  background: linear-gradient(to right, #030b17, rgba(0, 0, 0, 0));
 }
 
 @keyframes arun {
@@ -443,25 +453,32 @@ footer {
   bottom: 102px;
   display: none;
 }
-.footer-text img:hover ~ .fb-hover {
+.fb:hover .fb-hover {
   display: block;
   cursor: pointer;
 }
-.hotstar-text img:hover ~ .playstore-hover {
+.play:hover .playstore-hover {
   display: block;
   cursor: pointer;
+}
+.pop {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  position: fixed;
+  top: 0px;
+  z-index: 9;
+  background: radial-gradient(black, transparent);
 }
 .popup {
   width: 386px;
   height: 380px;
   border-radius: 2px;
   background: linear-gradient(to bottom, #192133, #111826);
-  display: none;
   flex-direction: column;
-  position: fixed;
+  position: relative;
   top: 50px;
-  left: 40%;
-  z-index: 9;
+  margin: auto;
   padding: 35px;
 }
 .svg-close {
